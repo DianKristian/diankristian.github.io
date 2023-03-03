@@ -9,6 +9,10 @@
 	<style>
 	a, a:link, a:visited, a:hover, a:active { text-decoration: none; }
 	.card-img-overlay { background-color: rgba(0,0,0,0.3); }
+	.card-title {
+		font-size: 1.25rem;
+		font-weight: 700;
+	}
 	</style>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -59,9 +63,9 @@
 				<div class="col-md-6 col-lg-4 d-flex align-items-stretch">
 					<div class="card w-100 small text-center my-3">
 						<div class="card-body">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="50" height="50" class="my-3"><path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM153 289l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L71 337c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM265 255l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/></svg>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="48" height="48" class="my-3"><path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM153 289l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L71 337c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM265 255l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/></svg>
 							<!--
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="50" height="50" class="my-3"><path d="M320 104.5c171.4 0 303.2 72.2 303.2 151.5S491.3 407.5 320 407.5c-171.4 0-303.2-72.2-303.2-151.5S148.7 104.5 320 104.5m0-16.8C143.3 87.7 0 163 0 256s143.3 168.3 320 168.3S640 349 640 256 496.7 87.7 320 87.7zM218.2 242.5c-7.9 40.5-35.8 36.3-70.1 36.3l13.7-70.6c38 0 63.8-4.1 56.4 34.3zM97.4 350.3h36.7l8.7-44.8c41.1 0 66.6 3 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7h-70.7L97.4 350.3zm185.7-213.6h36.5l-8.7 44.8c31.5 0 60.7-2.3 74.8 10.7 14.8 13.6 7.7 31-8.3 113.1h-37c15.4-79.4 18.3-86 12.7-92-5.4-5.8-17.7-4.6-47.4-4.6l-18.8 96.6h-36.5l32.7-168.6zM505 242.5c-8 41.1-36.7 36.3-70.1 36.3l13.7-70.6c38.2 0 63.8-4.1 56.4 34.3zM384.2 350.3H421l8.7-44.8c43.2 0 67.1 2.5 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7H417l-32.8 168.7z"/></svg>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="48" height="48" class="my-3"><path d="M320 104.5c171.4 0 303.2 72.2 303.2 151.5S491.3 407.5 320 407.5c-171.4 0-303.2-72.2-303.2-151.5S148.7 104.5 320 104.5m0-16.8C143.3 87.7 0 163 0 256s143.3 168.3 320 168.3S640 349 640 256 496.7 87.7 320 87.7zM218.2 242.5c-7.9 40.5-35.8 36.3-70.1 36.3l13.7-70.6c38 0 63.8-4.1 56.4 34.3zM97.4 350.3h36.7l8.7-44.8c41.1 0 66.6 3 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7h-70.7L97.4 350.3zm185.7-213.6h36.5l-8.7 44.8c31.5 0 60.7-2.3 74.8 10.7 14.8 13.6 7.7 31-8.3 113.1h-37c15.4-79.4 18.3-86 12.7-92-5.4-5.8-17.7-4.6-47.4-4.6l-18.8 96.6h-36.5l32.7-168.6zM505 242.5c-8 41.1-36.7 36.3-70.1 36.3l13.7-70.6c38.2 0 63.8-4.1 56.4 34.3zM384.2 350.3H421l8.7-44.8c43.2 0 67.1 2.5 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7H417l-32.8 168.7z"/></svg>
 							-->
 							<h3 class="card-title">PHP</h3>
 							<p class="card-text text-muted">Expert in PHP core language features and advanced concepts like object-oriented programming and design patterns. Experiences with CMS like Wordpress</p>
@@ -71,7 +75,7 @@
 				<div class="col-md-6 col-lg-4 d-flex align-items-stretch">
 					<div class="card w-100 small text-center my-3">
 						<div class="card-body">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="50" height="50" class="my-3"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></svg>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="48" height="48" class="my-3"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></svg>
 							<h3 class="card-title">Database</h3>
 							<p class="card-text text-muted">Expert in designing, developing, and administering MySQL and MariaDB databases. Skilled in SQL, performance tuning, and database optimization. Experience with tools and technologies like phpMyAdmin, MySQL Workbench, and MariaDB MaxScale.</p>
 						</div>
@@ -80,7 +84,7 @@
 				<div class="col-md-6 col-lg-4 d-flex align-items-stretch">
 					<div class="card w-100 small text-center my-3">
 						<div class="card-body">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="50" height="50" class="my-3"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/></svg>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="48" height="48" class="my-3"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/></svg>
 							<h3 class="card-title">HTML</h3>
 							<p class="card-text text-muted">Strong proficiency in XHTML/HTML5. Understanding of web development best practices and standards. Knowledge of SEO principles and best practices.</p>
 						</div>
@@ -89,7 +93,7 @@
 				<div class="col-md-6 col-lg-4 d-flex align-items-stretch">
 					<div class="card w-100 small text-center my-3">
 						<div class="card-body">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="50" height="50" class="my-3"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/></svg>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="48" height="48" class="my-3"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/></svg>
 							<h3 class="card-title">CSS</h3>
 							<p class="card-text text-muted">Skilled in CSS3, responsive design, and modern front-end frameworks like Bootstrap.</p>
 						</div>
@@ -98,7 +102,7 @@
 				<div class="col-md-6 col-lg-4 d-flex align-items-stretch">
 					<div class="card w-100 small text-center my-3">
 						<div class="card-body">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="50" height="50" class="my-3"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM243.8 381.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"/></svg>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="48" height="48" class="my-3"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM243.8 381.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"/></svg>
 							<h3 class="card-title">JavaScript</h3>
 							<p class="card-text text-muted">Proficient in AJAX, JSON, and in using libraries and tools like jQuery.</p>
 						</div>
@@ -128,7 +132,7 @@
 				<div class="col-md-6 col-lg-4 d-flex align-items-stretch">
 					<div class="card w-100 small my-3">
 						<picture class="position-relative">
-							<img class="card-img-top" src="img/github-php-imap.jpg" loading="lazy" alt="PHP IMAP Client">
+							<img class="card-img-top" src="img/github-php-imap.jpg?a=ksjhdgt" loading="lazy" alt="PHP IMAP Client">
 							<div class="card-img-overlay"></div>
 						</picture>
 						<div class="card-body">
@@ -176,7 +180,7 @@
 				<div class="col-md-6 col-lg-4 d-flex align-items-stretch">
 					<div class="card w-100 small my-3">
 						<picture class="position-relative">
-							<img class="card-img-top" src="img/github-php-imap.jpg" loading="lazy" alt="Ummi Pizza WordPress Plugin">
+							<img class="card-img-top" src="img/github-php-imap.jpg?a=ksjhdgt" loading="lazy" alt="Ummi Pizza WordPress Plugin">
 							<div class="card-img-overlay"></div>
 						</picture>
 						<div class="card-body">
@@ -236,7 +240,7 @@
 				<div class="col-md-6 col-lg-4 d-flex align-items-stretch">
 					<div class="card w-100 small my-3">
 						<picture class="position-relative">
-							<img class="card-img-top" src="img/github-php-imap.jpg" loading="lazy" alt="JSON Hex">
+							<img class="card-img-top" src="img/github-php-imap.jpg?a=ksjhdgt" loading="lazy" alt="JSON Hex">
 							<div class="card-img-overlay"></div>
 						</picture>
 						<div class="card-body">
@@ -269,16 +273,18 @@
 			</div>
 			<div class="row">
 				<div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-					<div class="card w-100 my-2">
-						<div class="card-header bg-dark text-white"><h3 class="card-title my-0">Fixed Price &amp; Scope</h3></div>
+					<div class="card shadow w-100 my-3">
+						<div class="card-header">
+							<h3 class="card-title my-0">Fixed Price &amp; Scope</h3>
+						</div>
 						<ul class="list-group list-group-flush">
 							<li class="list-group-item"><i class="fa-solid fa-square-check"></i>&nbsp;Project Management Included</li>
-							<li class="list-group-item text-muted"><i class="fa-solid fa-square-xmark"></i>&nbsp;Timeframe Flexibility</li>
+							<li class="list-group-item bg-light text-muted"><i class="fa-solid fa-square-xmark"></i>&nbsp;Timeframe Flexibility</li>
 							<li class="list-group-item"><i class="fa-solid fa-square-check"></i>&nbsp;Detailed Requirements</li>
-							<li class="list-group-item text-muted"><i class="fa-solid fa-square-xmark"></i>&nbsp;Full Control</li>
+							<li class="list-group-item bg-light text-muted"><i class="fa-solid fa-square-xmark"></i>&nbsp;Full Control</li>
 						</ul>
-						<div class="card-body">
 							<!--
+						<div class="card-body">
 							<p class="text-muted">The fixed price model is suitable for projects that have well-defined scopes, requirements, and timelines.</p>
 							<ul class="list-unstyled text-muted">
 								<li>Under this model, both of us agree on a fixed price for the entire project or service, which will not change regardless of the amount of time, effort, or resources required to complete the project or service.</li>
@@ -286,82 +292,44 @@
 							<div class="">
 								<span class="text-muted"><small>Please inquire for consultation and project estimate.</small></span>
 							</div>
+						</div>
 							-->
-						</div>
-						
-							
-						<!--
-						<div class="card-footer">
-							You must provide detailed technical specifications or project requirements.
-						</div>
-						-->
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-					<div class="card w-100 small my-2">
 						<div class="card-body">
-							<h3 class="card-title">Time &amp; Material</h3>
-							<table class="table table-sm table-bordered my-3">
-								<tbody>
-									<tr>
-										<td>Project Management Included</td>
-										<td class="text-center">Yes</td>
-									</tr>
-									<tr>
-										<td>Timeframe Flexibility</td>
-										<td class="text-center">Yes</td>
-									</tr>
-									<tr>
-										<td>Detailed Requirements</td>
-										<td class="text-center">No</td>
-									</tr>
-									<tr>
-										<td>Full Control</td>
-										<td class="text-center">Yes</td>
-									</tr>
-								</tbody>
-							</table>
-							<!--
-							<h4>Advantages</h4>
-							<ul>
-								<li>Flexibility in terms of project scope and timeline.</li>
-								<li>Full control over the project's progress and can provide feedback and make changes as needed throughout the project lifecycle.</li>
-							</ul>
-							-->
+							<a href="https://www.upwork.com/freelancers/~01ba74e2ab307fd1d4" target="_blank" rel="external opener" class="btn w-100 mb-3 btn-success">Hire me on <strong>Upwork</strong></a>
+							<a href="https://www.fiverr.com/diankristian" target="_blank" rel="external opener" class="btn w-100 btn-success">Hire me on <strong>Fiverr</strong></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-					<div class="card w-100 small my-2">
+					<div class="card shadow w-100 my-3">
+						<div class="card-header">
+							<h3 class="card-title my-0">Time &amp; Material</h3>
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item"><i class="fa-solid fa-square-check"></i>&nbsp;Project Management Included</li>
+							<li class="list-group-item"><i class="fa-solid fa-square-check"></i>&nbsp;Timeframe Flexibility</li>
+							<li class="list-group-item bg-light text-muted"><i class="fa-solid fa-square-xmark"></i>&nbsp;Detailed Requirements</li>
+							<li class="list-group-item"><i class="fa-solid fa-square-check"></i>&nbsp;Full Control</li>
+						</ul>
 						<div class="card-body">
-							<h3 class="card-title">Full Time</h3>
-							<table class="table table-sm table-bordered my-3">
-								<tbody>
-									<tr>
-										<td>Project Management Included</td>
-										<td class="text-center">No</td>
-									</tr>
-									<tr>
-										<td>Timeframe Flexibility</td>
-										<td class="text-center">Yes</td>
-									</tr>
-									<tr>
-										<td>Detailed Requirements</td>
-										<td class="text-center">No</td>
-									</tr>
-									<tr>
-										<td>Full Control</td>
-										<td class="text-center">Yes</td>
-									</tr>
-								</tbody>
-							</table>
-							<!--
-							<ul>
-								<li>Full time working at least 40 hours per week.</li>
-								<li>Highest level of control &amp; flexibility</li>
-								<li>Fixed monthly cost</li>
-							</ul>
-							-->
+							<a href="https://www.upwork.com/freelancers/~01ba74e2ab307fd1d4" target="_blank" rel="external opener" class="btn w-100 mb-3 btn-success">Hire me on <strong>Upwork</strong></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+					<div class="card shadow w-100 my-3">
+						<div class="card-header">
+							<h3 class="card-title my-0">Full Time</h3>
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item bg-light text-muted"><i class="fa-solid fa-square-xmark"></i>&nbsp;Project Management Included</li>
+							<li class="list-group-item"><i class="fa-solid fa-square-check"></i>&nbsp;Timeframe Flexibility</li>
+							<li class="list-group-item bg-light text-muted"><i class="fa-solid fa-square-xmark"></i>&nbsp;Detailed Requirements</li>
+							<li class="list-group-item"><i class="fa-solid fa-square-check"></i>&nbsp;Full Control</li>
+						</ul>
+						<div class="card-body">
+							<a href="https://www.upwork.com/freelancers/~01ba74e2ab307fd1d4" target="_blank" rel="external opener" class="btn w-100 mb-3 btn-success">Hire me on <strong>Upwork</strong></a>
+							<a href="https://www.fiverr.com/diankristian" target="_blank" rel="external opener" class="btn w-100 btn-success">Hire me on <strong>Fiverr</strong></a>
 						</div>
 					</div>
 				</div>

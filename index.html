@@ -12,6 +12,9 @@
 	h1,h2,h3,h4,h5,h6{font-weight: 700;}
 	.card-img-overlay { background-color: rgba(0,0,0,0.3); }
 	.card-title {font-size: 1.25rem;}
+	.card {border-radius:1rem;}
+	.card .card-header {border-radius:1rem 1rem 0 0;}
+	.card .card-footer {border-radius:0 0 1rem 1rem;}
 	</style>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -54,14 +57,14 @@
 			</div>
 		</div>
 	</section>
-	<section id="skills" class="bg-secondary py-3">
+	<section id="skills" class="bg-dark py-2 py-sm-3">
 		<div class="container">
 			<div class="text-center">
 				<h2 class="text-light my-3">Tech Stack</h2>
 			</div>
 			<div class="row">
 				<div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-					<div class="card w-100 small text-center my-3">
+					<div class="card w-100 small text-center my-2 my-sm-3">
 						<div class="card-body">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="48" height="48" class="my-3"><path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM153 289l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L71 337c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM265 255l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/></svg>
 							<!--
@@ -73,7 +76,7 @@
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-					<div class="card w-100 small text-center my-3">
+					<div class="card w-100 small text-center my-2 my-sm-3">
 						<div class="card-body">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="48" height="48" class="my-3"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></svg>
 							<h3 class="card-title">Database</h3>
@@ -82,7 +85,7 @@
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-					<div class="card w-100 small text-center my-3">
+					<div class="card w-100 small text-center my-2 my-sm-3">
 						<div class="card-body">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="48" height="48" class="my-3"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/></svg>
 							<h3 class="card-title">HTML</h3>
@@ -91,7 +94,7 @@
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-					<div class="card w-100 small text-center my-3">
+					<div class="card w-100 small text-center my-2 my-sm-3">
 						<div class="card-body">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="48" height="48" class="my-3"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/></svg>
 							<h3 class="card-title">CSS</h3>
@@ -100,7 +103,7 @@
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-					<div class="card w-100 small text-center my-3">
+					<div class="card w-100 small text-center my-2 my-sm-3">
 						<div class="card-body">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="48" height="48" class="my-3"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM243.8 381.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"/></svg>
 							<h3 class="card-title">JavaScript</h3>
@@ -149,7 +152,7 @@
 						<div class="card-body">
 							<h3 class="card-title mb-2">PHP IMAP Client</h3>
 							<div class="mb-2">
-								<span class="badge badge-dark">PHP</span>
+								<span class="badge badge-pill badge-dark">PHP</span>
 							</div>
 							<p class="card-text">Development of a custom PHP script for accessing and manipulating email messages that supports proxies, follows RFC standards, and is compatible with PHP version 8.</p>
 						</div>
@@ -166,19 +169,19 @@
 						<div class="card-body">
 							<h3 class="card-title mb-2">Sanctuary Architects</h3>
 							<div class="mb-2">
-								<span class="badge badge-dark">PHP</span>
-								<span class="badge badge-dark">MySQL</span>
-								<span class="badge badge-dark">Apache Server</span>
-								<span class="badge badge-dark">JavaScript</span>
-								<span class="badge badge-dark">HTML5</span>
-								<span class="badge badge-dark">CSS3</span>
+								<span class="badge badge-pill badge-dark">PHP</span>
+								<span class="badge badge-pill badge-dark">MySQL</span>
+								<span class="badge badge-pill badge-dark">Apache Server</span>
+								<span class="badge badge-pill badge-dark">JavaScript</span>
+								<span class="badge badge-pill badge-dark">HTML5</span>
+								<span class="badge badge-pill badge-dark">CSS3</span>
 								<!--
 								<span class="badge badge-success">htaccess</span>
 								<span class="badge badge-success">jQuery</span>
 								<span class="badge badge-success">Bootstrap</span>
 								-->
 							</div>
-							<p class="card-text">Refactoring of a custom content management system for company profile websites to improve its readability, maintainability, and performance.</p>
+							<p class="card-text">Refactoring of a custom content management system to improve its readability, maintainability, and performance.</p>
 							<!--
 							<a href="https://sanctuaryarch.com" target="_blank" rel="external nofollow opener" class="text-success">Sanctuary Architects &amp; Designers</a>
 							-->
@@ -222,11 +225,11 @@
 						<div class="card-body">
 							<h3 class="card-title mb-2">Ummi Pizza</h3>
 							<div class="mb-2">
-								<span class="badge badge-dark">PHP</span>
-								<span class="badge badge-dark">MySQL</span>
-								<span class="badge badge-dark">Wordpress</span>
-								<span class="badge badge-dark">API</span>
-								<span class="badge badge-dark">Cron</span>
+								<span class="badge badge-pill badge-dark">PHP</span>
+								<span class="badge badge-pill badge-dark">MySQL</span>
+								<span class="badge badge-pill badge-dark">Wordpress</span>
+								<span class="badge badge-pill badge-dark">API</span>
+								<span class="badge badge-pill badge-dark">Cron</span>
 							</div>
 							<p class="card-">Development of a WordPress plugin to send newsletters via Sendgrid. The plugin will validate newly registered email addresses using the debounce API to prevent email bounces.</p>
 							<!--
@@ -262,10 +265,10 @@
 						<div class="card-body">
 							<h3 class="card-title mb-2">Savon Store</h3>
 							<div class="mb-2">
-								<span class="badge badge-dark">PHP</span>
-								<span class="badge badge-dark">CSV</span>
-								<span class="badge badge-dark">API</span>
-								<span class="badge badge-dark">Cron</span>
+								<span class="badge badge-pill badge-dark">PHP</span>
+								<span class="badge badge-pill badge-dark">CSV</span>
+								<span class="badge badge-pill badge-dark">API</span>
+								<span class="badge badge-pill badge-dark">Cron</span>
 							</div>
 							<p class="card-text">Development of an automation system to integrate pricing and stock levels between the Amazon, Etsy, and Orderdesk inventory systems.</p>
 						</div>
@@ -287,10 +290,10 @@
 							-->
 							<h3 class="card-title mb-2">44 Control</h3>
 							<div class="mb-2">
-								<span class="badge badge-dark">PHP</span>
-								<span class="badge badge-dark">DOM</span>
-								<span class="badge badge-dark">PHPMailer</span>
-								<span class="badge badge-dark">Cron</span>
+								<span class="badge badge-pill badge-dark">PHP</span>
+								<span class="badge badge-pill badge-dark">DOM</span>
+								<span class="badge badge-pill badge-dark">PHPMailer</span>
+								<span class="badge badge-pill badge-dark">Cron</span>
 							</div>
 							<p class="card-text">Development of an automation system to send email notifications in case of an incident. The system sources data from the 44 Control website using web scraping techniques.</p>
 							<!--
@@ -313,9 +316,9 @@
 							-->
 							<h3 class="card-title mb-2">XL School Community Cirebon</h3>
 							<div class="mb-2">
-								<span class="badge badge-dark">PHP</span>
-								<span class="badge badge-dark">MySQL</span>
-								<span class="badge badge-dark">Gammu</span>
+								<span class="badge badge-pill badge-secondary">PHP</span>
+								<span class="badge badge-pill badge-secondary">MySQL</span>
+								<span class="badge badge-pill badge-secondary">Gammu</span>
 							</div>
 							<p class="card-text">Development of an SMS center for the high school student community in Cirebon, Indonesia, to facilitate the exchange of information on their events and activities.</p>
 						</div>
@@ -359,7 +362,7 @@
 			</div>
 		</div>
 	</section>
-	<section id="engagement" class="bg-secondary py-3">
+	<section id="engagement" class="bg-dark py-2 py-sm-3">
 		<div class="container">
 			<div class="text-center text-white">
 				<h2 class="my-3">Engagement Models</h2>
@@ -373,7 +376,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-					<div class="card small w-100 my-3">
+					<div class="card small w-100 my-2 my-sm-3">
 						<div class="card-header">
 							<h3 class="card-title my-0">Fixed Price &amp; Scope</h3>
 						</div>
@@ -382,21 +385,21 @@
 							<p class="card-text">Perfect for short-term projects that have a fixed scope of work, a defined budget, or a tight timeline.</p>
 						</div>
 						-->
-						<ul class="list-group">
+						<ul class="list-group text-secondary">
 							<li class="list-group-item">
-								<span class="fa-solid fa-xl fa-square-check text-dark" style="width:1.25em;"></span>
+								<span class="fa-solid fa-xl fa-square-check" style="width:1.25em;"></span>
 								Guaranteed fixed price and scope.
 							</li>
 							<li class="list-group-item">
-								<span class="fa-solid fa-xl fa-square-check text-dark" style="width:1.25em;"></span>
+								<span class="fa-solid fa-xl fa-square-check" style="width:1.25em;"></span>
 								Application testing and quality assurance.
 							</li>
 							<li class="list-group-item">
-								<span class="fa-solid fa-xl fa-square-check text-dark" style="width:1.25em;"></span>
+								<span class="fa-solid fa-xl fa-square-check" style="width:1.25em;"></span>
 								30-days warranty guarantee once delivered.
 							</li>
 							<li class="list-group-item">
-								<span class="fa-solid fa-xl fa-square-check text-dark" style="width:1.25em;"></span>
+								<span class="fa-solid fa-xl fa-square-check" style="width:1.25em;"></span>
 								Project management included.
 							</li>
 						</ul>
@@ -421,65 +424,69 @@
 							<!--
 							<p class="card-text">Perfect for short-term projects that have a fixed scope of work, a defined budget, or a tight timeline. You must provide detailed technical specifications or requirements before project begins.</p>
 							-->
-							<a href="https://www.upwork.com/freelancers/~01ba74e2ab307fd1d4" target="_blank" rel="external opener" class="btn w-100 mb-2 btn-dark">Contact me on <strong>Upwork</strong></a>
-							<a href="https://www.fiverr.com/diankristian" target="_blank" rel="external opener" class="btn w-100 btn-dark">Contact me on <strong>Fiverr</strong></a>
+							<a href="https://www.upwork.com/freelancers/~01ba74e2ab307fd1d4" target="_blank" rel="external opener" class="btn btn-sm btn-primary d-block mb-2">Contact me on <strong>Upwork</strong></a>
+							<a href="https://www.fiverr.com/diankristian" target="_blank" rel="external opener" class="btn btn-sm btn-secondary d-block">Contact me on <strong>Fiverr</strong></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-4 d-flex align-items-stretch">
-					<div class="card small w-100 my-3">
+					<div class="card small w-100 my-2 my-sm-3">
 						<div class="card-header">
 							<h3 class="card-title my-0">Time &amp; Material</h3>
 						</div>
-						<ul class="list-group">
+						<ul class="list-group text-secondary">
 							<li class="list-group-item">
-								<span class="fa-solid fa-xl fa-square-check text-dark" style="width:1.25em;"></span>
+								<span class="fa-solid fa-xl fa-square-check" style="width:1.25em;"></span>
 								Flexibility in requirements and resources.
 							</li>
 							<li class="list-group-item">
-								<span class="fa-solid fa-xl fa-square-check text-dark" style="width:1.25em;"></span>
+								<span class="fa-solid fa-xl fa-square-check" style="width:1.25em;"></span>
 								Control over the scope of project.
 							</li>
 							<li class="list-group-item">
-								<span class="fa-solid fa-xl fa-square-check text-dark" style="width:1.25em;"></span>
+								<span class="fa-solid fa-xl fa-square-check" style="width:1.25em;"></span>
 								Fast response to project changes.
 							</li>
 							<li class="list-group-item">
-								<span class="fa-solid fa-xl fa-square-check text-dark" style="width:1.25em;"></span>
+								<span class="fa-solid fa-xl fa-square-check" style="width:1.25em;"></span>
 								Project management included.
+							</li>
+							<li class="list-group-item">
+								<span class="fa-solid fa-xl fa-square-check" style="width:1.25em;"></span>
+								Time Tracker available.
 							</li>
 						</ul>
 						<div class="card-footer h-100">
-							<a href="https://www.upwork.com/freelancers/~01ba74e2ab307fd1d4" target="_blank" rel="external opener" class="btn w-100 btn-dark">Contact me on <strong>Upwork</strong></a>
+							<a href="https://www.upwork.com/freelancers/~01ba74e2ab307fd1d4" target="_blank" rel="external opener" class="btn btn-sm btn-primary d-block">Contact me on <strong>Upwork</strong></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-4">
-					<div class="card small w-100 my-3">
+					<div class="card small w-100 my-2 my-sm-3">
 						<div class="card-header">
 							<h3 class="card-title my-0">Full Time</h3>
 						</div>
-						<ul class="list-group">
+						<ul class="list-group text-secondary">
 							<li class="list-group-item">
-								<span class="fa-solid fa-xl fa-square-check text-dark" style="width:1.25em;"></span>
+								<span class="fa-solid fa-xl fa-square-check" style="width:1.25em;"></span>
 								Fixed monthly cost.
 							</li>
 							<li class="list-group-item">
-								<span class="fa-solid fa-xl fa-square-check text-dark" style="width:1.25em;"></span>
+								<span class="fa-solid fa-xl fa-square-check" style="width:1.25em;"></span>
 								Highest level of control and flexibility.
 							</li>
 							<li class="list-group-item">
-								<span class="fa-solid fa-xl fa-square-check text-dark" style="width:1.25em;"></span>
+								<span class="fa-solid fa-xl fa-square-check" style="width:1.25em;"></span>
 								Lowest cost engagement model.
 							</li>
 							<li class="list-group-item">
-								<span class="fa-solid fa-xl fa-square-check text-dark" style="width:1.25em;"></span>
+								<span class="fa-solid fa-xl fa-square-check" style="width:1.25em;"></span>
 								Full-time working at least 40 hours a week.
 							</li>
 						</ul>
 						<div class="card-footer h-100">
-							<a href="https://www.upwork.com/freelancers/~01ba74e2ab307fd1d4" target="_blank" rel="external opener" class="btn w-100 mb-2 btn-dark">Contact me on <strong>Upwork</strong></a>
-							<a href="https://www.fiverr.com/diankristian" target="_blank" rel="external opener" class="btn w-100 btn-dark">Contact me on <strong>Fiverr</strong></a>
+							<a href="https://www.upwork.com/freelancers/~01ba74e2ab307fd1d4" target="_blank" rel="external opener" class="btn btn-sm btn-primary d-block mb-2">Contact me on <strong>Upwork</strong></a>
+							<a href="https://www.fiverr.com/diankristian" target="_blank" rel="external opener" class="btn btn-sm btn-secondary d-block">Contact me on <strong>Fiverr</strong></a>
 						</div>
 					</div>
 				</div>
